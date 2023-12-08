@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+
+  <!-- métadata of the website -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="home.css" rel="stylesheet"/>
+    <script src="./src/javascript/getAllJsonElement.js"></script>
+    <title>Home</title>
+  </head>
+
+  <!-- The body of the home page -->
+  <body onload="getAllJsonElement('./assets/jsonForTranslate/en.json')">
+    <header>
+      <section class="header-contact-container">
+        <p>mail: linbin@ywrh.cn</p>
+        <p class="contact-text">tel: 13735789480</p>
+      </section>
+      <nav>
+        <div class="nav-container">
+          <section class="logo-container">
+            <p class="logo">YWRH</p>
+          </section>
+          <section class="nav-link-button-container">
+            <p><a id="home" href="./home.html"></a></p>
+            <p class="nav-link-button-text"><a id="contact" href="./src/contact.html"></a></p>
+          </section>
+          <section class="nav-flag-container">
+            <img src="./assets/icon/countryFlag/en-flag.png" alt="en flag" class="en-flag" onclick="getAllJsonElement('./assets/jsonForTranslate/en.json')" />
+            <img src="./assets/icon/countryFlag/zh-flag.png" alt="zh flag" class="zh-flag" onclick="getAllJsonElement('./assets/jsonForTranslate/zh.json')" />
+          </section>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
