@@ -1,6 +1,9 @@
 {
   "JsonNavigation": {
     "JsonHome": "Home",
-    "JsonContact": "Contact"
+    "JsonCompany": "The Company",
+    "JsonOurProducts": "Our Products",
+    "JsonNews": "News",
+    "JsonContactUs": "Contact Us"
   }
 }

@@ -1,6 +1,9 @@
 {
   "JsonNavigation": {
     "JsonHome": "主页",
-    "JsonContact": "联系"
+    "JsonCompany": "公司",
+    "JsonOurProducts": "我们的产品",
+    "JsonNews": "消息",
+    "JsonContactUs": "联系我们"
   }
 }
