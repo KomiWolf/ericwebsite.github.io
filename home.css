@@ -1,20 +1,9 @@
 body {
-  background-color: antiquewhite;
+  background-color: #e0e0e0;
 }
 
 a {
   color: black;
   text-decoration: none; /* To not underline the link */
-}
-
-a:visited {
-  color: black;
-}
-
-a:hover {
-  color: orange;
-}
-
-a:active {
-  color: orangered;
+  transition: font-size 0.2s ease;
 }

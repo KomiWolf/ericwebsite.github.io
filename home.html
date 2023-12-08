@@ -8,8 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="home.css" rel="stylesheet"/>
     <link href="./src/html-css/top-navigation.css" rel="stylesheet" />
+    <script src="./src/javascript/fetchJsonFileAndDisplayContent.js" ></script>
     <script src="./src/javascript/getAllJsonElement.js"></script>
-    <title>Home</title>
+    <script src="./src/javascript/changeLanguage.js"></script>
+    <title id="home-page-title">Home</title>
   </head>
 
   <!-- The body of the home page -->
@@ -35,26 +37,26 @@
           <!-- NAVIGATION BUTTON -->
           <section class="nav-link-button-container">
             <p>
-              <a id="top-nav-home" href="./home.html"></a>
+              <a id="top-nav-home" href="./home.html" class="active-page"></a>
             </p>
             <p class="nav-link-button-text">
-              <a id="top-nav-company"></a>
+              <a id="top-nav-company" class="non-active-page"></a>
             </p>
             <p class="nav-link-button-text">
-              <a id="top-nav-product"></a>
+              <a id="top-nav-product" class="non-active-page"></a>
             </p>
             <p class="nav-link-button-text">
-              <a id="top-nav-news"></a>
+              <a id="top-nav-news" class="non-active-page"></a>
             </p>
             <p class="nav-link-button-text">
-              <a id="top-nav-contact" href="./src/html-css/contact.html"></a>
+              <a id="top-nav-contact" href="./src/html-css/contact/contact.html" class="non-active-page"></a>
             </p>
           </section>
 
           <!-- FLAG BUTTON TO CHANGE LANGUAGE -->
           <section class="nav-flag-container">
-            <img src="./assets/icon/countryFlag/en-flag.png" alt="en flag" class="en-flag" onclick="getAllJsonElement('./assets/jsonForTranslate/en.json')" />
-            <img src="./assets/icon/countryFlag/zh-flag.png" alt="zh flag" class="zh-flag" onclick="getAllJsonElement('./assets/jsonForTranslate/zh.json')" />
+            <img src="./assets/icon/countryFlag/en-flag.png" alt="en flag" class="en-flag" onclick="changeLanguage('./assets/jsonForTranslate/en.json', 'home-page-title')" />
+            <img src="./assets/icon/countryFlag/zh-flag.png" alt="zh flag" class="zh-flag" onclick="changeLanguage('./assets/jsonForTranslate/zh.json', 'home-page-title')" />
           </section>
         </div>
       </nav>

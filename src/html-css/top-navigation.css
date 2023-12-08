@@ -23,12 +23,12 @@ header {
 
 /* Top navigation css */
 nav {
-  margin-bottom: 50px;
-  background-color: white;
-  border-radius: 70px;
   margin-top: 20px;
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 50px;
+  background-color: white;
+  border-radius: 70px;
 }
 
 .nav-container {
@@ -53,6 +53,21 @@ nav {
   flex: 2;
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+a.active-page {
+  color: #1E90FF;
+  font-weight: 700;
+}
+
+a.active-page:hover, a.non-active-page:hover {
+  font-size: 18px;
+}
+
+a.active-page:active, a.non-active-page:active {
+  color: orangered;
 }
 
 .nav-link-button-text {
