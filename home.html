@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+
+  <!-- Metadata of the website -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="home.css" rel="stylesheet"/>
+    <link href="./src/html-css/top-navigation.css" rel="stylesheet" />
+    <script src="./src/javascript/getAllJsonElement.js"></script>
+    <title>Home</title>
+  </head>
+
+  <!-- The body of the home page -->
+  <body onload="getAllJsonElement('./assets/jsonForTranslate/en.json')">
+    <header>
+      <!-- START CONTACT HEADER -->
+      <section class="header-contact-container">
+        <img src="./assets/icon/contact/mail.png" alt="mail" class="mail-icon" />
+        <p class="contact-text">mail</p>
+        <img src="./assets/icon/contact/phone.png" alt="phone" class="phone-icon separate-element" />
+        <p class="contact-text">phone number</p>
+      </section>
+      <!-- END CONTACT HEADER -->
+
+      <!-- START TOP NAVIGATION  -->
+      <nav>
+        <div class="nav-container">
+          <!-- LOGO -->
+          <section class="logo-container">
+            <p class="logo">YWRH</p>
+          </section>
+
+          <!-- NAVIGATION BUTTON -->
+          <section class="nav-link-button-container">
+            <p><a id="home" href="./home.html"></a></p>
+            <p class="nav-link-button-text"><a id="contact" href="./src/contact.html"></a></p>
+          </section>
+
+          <!-- FLAG BUTTON TO CHANGE LANGUAGE -->
+          <section class="nav-flag-container">
+            <img src="./assets/icon/countryFlag/en-flag.png" alt="en flag" class="en-flag" onclick="getAllJsonElement('./assets/jsonForTranslate/en.json')" />
+            <img src="./assets/icon/countryFlag/zh-flag.png" alt="zh flag" class="zh-flag" onclick="getAllJsonElement('./assets/jsonForTranslate/zh.json')" />
+          </section>
+        </div>
+      </nav>
+      <!-- END TOP NAVIGATION  -->
+    </header>
+  </body>
+</html>

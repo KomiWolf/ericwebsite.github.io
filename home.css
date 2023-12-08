@@ -1,0 +1,20 @@
+body {
+  background-color: antiquewhite;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: orange;
+}
+
+a:active {
+  color: orangered;
+}
