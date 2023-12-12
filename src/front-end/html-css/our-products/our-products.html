@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <!-- Metadata of the website -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./our-products.css" rel="stylesheet"/>
+    <link href="../top-navigation.css" rel="stylesheet" />
+    <script src="../../javascript/fetchJsonFileAndDisplayContent.js"></script>
+    <script src="../../javascript/getAllJsonElement.js"></script>
+    <script src="../../javascript/changeLanguage.js"></script>
+    <script src="../../javascript/displayMenuContent.js"></script>
+    <script src="../../javascript/loadLanguage.js"></script>
+    <title id="products-page-title"></title>
+  </head>
+
+  <!-- The body of the home page -->
+  <body onload="loadLanguage('products')">
+    <header>
+      <!-- START CONTACT HEADER -->
+      <section class="header-contact-container">
+        <section class="header-contact-elements-container">
+          <img src="../../../../assets/icon/contact/mail.png" alt="mail" class="mail-icon" />
+          <p class="contact-text">mailtest@gmail.com</p>
+        </section>
+        <section class="header-contact-elements-container">
+          <img src="../../../../assets/icon/contact/phone.png" alt="phone" class="phone-icon separate-element" />
+          <p class="contact-text">+33 7 19 76 03 66</p>
+        </section>
+        <section class="header-contact-elements-container">
+          <img src="../../../../assets/icon/contact/address.png" alt="mail" class="address-icon separate-element" />
+          <p class="contact-text">fictive address</p>
+        </section>
+      </section>
+      <!-- END CONTACT HEADER -->
+
+      <!-- START TOP NAVIGATION  -->
+      <nav>
+        <div class="nav-container">
+          <!-- LOGO -->
+          <section class="logo-container">
+            <p class="logo">YWRH</p>
+          </section>
+
+          <!-- NAVIGATION BUTTON -->
+          <section id="nav-button" class="nav-link-button-container">
+            <p class="non-active-page">
+              <a id="top-nav-home" href="../../../../home.html" class="non-active-page"></a>
+            </p>
+            <p class="nav-link-button-text non-active-page">
+              <a id="top-nav-company" href="../company/company.html" class="non-active-page"></a>
+            </p>
+            <p class="nav-link-button-text active-page">
+              <a id="top-nav-product" href="./our-products.html" class="active-page"></a>
+            </p>
+            <p class="nav-link-button-text non-active-page">
+              <a id="top-nav-news" href="../news/news.html" class="non-active-page"></a>
+            </p>
+            <p class="nav-link-button-text non-active-page">
+              <a id="top-nav-contact" href="../contact/contact.html" class="non-active-page"></a>
+            </p>
+          </section>
+
+          <!-- FLAG BUTTON TO CHANGE LANGUAGE -->
+          <section id="nav-flag-container" class="nav-flag-container">
+            <img src="../../../../assets/icon/countryFlag/en-flag.png" alt="en flag" class="en-flag" onclick="changeLanguage('../../../../assets/jsonForTranslate/en.json', 'products-page-title', 'en')" />
+            <img src="../../../../assets/icon/countryFlag/zh-flag.png" alt="zh flag" class="zh-flag" onclick="changeLanguage('../../../../assets/jsonForTranslate/zh.json', 'products-page-title', 'zh-Hans')" />
+          </section>
+
+          <!-- MENU BUTTON WHEN THE SCREEN IS SMALL -->
+          <section id="nav-menu-button-container" class="nav-menu-button-container">
+            <section id="nav-dropdown-button" class="nav-menu-button" onclick="displayMenuContent()">
+              <img id="nav-dropdown-button-icon" src="../../../../assets/icon/nav-menu-button.png" class="nav-menu-button-icon" />
+            </section>
+          </section>
+        </div>
+
+        <!-- DROPDOWN CONTENT DISPLAYED IF THE USER CLICKED ON THE MENU BUTTON ONE TIME -->
+        <section id="dropdown-content" class="dropdown-content">
+          <p class="non-active-page">
+            <a id="top-nav-home-menu" href="../../../../home.html" class="non-active-page"></a>
+          </p>
+          <p class="non-active-page">
+            <a id="top-nav-company-menu" href="../company/company.html" class="non-active-page"></a>
+          </p>
+          <p class="active-page">
+            <a id="top-nav-product-menu" href="./our-products.html" class="active-page"></a>
+          </p>
+          <p class="non-active-page">
+            <a id="top-nav-news-menu" href="../news/news.html" class="non-active-page"></a>
+          </p>
+          <p class="non-active-page">
+            <a id="top-nav-contact-menu" href="../contact/contact.html" class="non-active-page"></a>
+          </p>
+        </section>
+      </nav>
+      <!-- END TOP NAVIGATION  -->
+    </header>
+  </body>
+</html>

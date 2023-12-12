@@ -1,0 +1,9 @@
+body {
+  background-color: #e0e0e0;
+}
+
+a {
+  color: black;
+  text-decoration: none; /* To not underline the link */
+  transition: font-size 0.2s ease;
+}
