@@ -12,7 +12,7 @@ function displayMenuContent() {
 window.addEventListener('resize', function() {
   var display = document.getElementById('dropdown-content');
 
-  if (window.innerWidth >= 900) {
+  if (window.innerWidth >= 901) {
     display.style.display = 'none';
   };
 });

@@ -184,7 +184,7 @@ a.active-page:active, a.non-active-page:active {
 }
 
 /* Top navigation responsive css */
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 900px) {
   .nav-link-button-container, .nav-flag-container {
     display: none;
   }
@@ -196,7 +196,7 @@ a.active-page:active, a.non-active-page:active {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 901px) {
   .nav-link-button-container, .nav-flag-container {
     display: flex;
   }
