@@ -163,7 +163,11 @@ a.active-page:active, a.non-active-page:active {
   margin-bottom: 2px;
 }
 
-.dropdown-content p:last-child {
+.nav-flag-container-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
   margin-bottom: 15px;
 }
 
