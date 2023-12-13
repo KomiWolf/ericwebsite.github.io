@@ -1,4 +1,7 @@
 {
+  "JsonHeaderContact": {
+    "JsonAddress": "Building 7, North District, Wanyang Zhongchuangcheng, Weishan Town, Dongyang City, Zhejiang Province"
+  },
   "JsonNavigation": {
     "JsonHome": "Home",
     "JsonCompany": "The Company",

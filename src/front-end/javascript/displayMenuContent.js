@@ -4,8 +4,16 @@ function displayMenuContent() {
   
   if (display.style.display === 'none') {
     display.style.display = 'flex';
+    display.style.animationName = 'slideInTop';
+    display.style.animationDuration = '0.8s';
+    display.style.animationTimingFunction = 'ease-in-out';
   } else {
-    display.style.display = 'none';
+    display.style.animationName = 'slideInBottom';
+    display.style.animationDuration = '0.8s';
+    display.style.animationTimingFunction = 'ease';
+    setTimeout(function() {
+      display.style.display = 'none';
+    }, 500);
   };
 };
 

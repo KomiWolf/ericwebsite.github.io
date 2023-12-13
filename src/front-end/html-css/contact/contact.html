@@ -2,28 +2,33 @@
 
 <html lang="en">
 
-  <!-- Metadata of the website -->
+  <!-- METADATA CONTACTPAGE -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="./contact.css" rel="stylesheet"/>
     <link href="../top-navigation.css" rel="stylesheet" />
+
     <script src="../../javascript/fetchJsonFileAndDisplayContent.js"></script>
     <script src="../../javascript/getAllJsonElement.js"></script>
     <script src="../../javascript/changeLanguage.js"></script>
     <script src="../../javascript/displayMenuContent.js"></script>
     <script src="../../javascript/loadLanguage.js"></script>
+
     <title id="contact-page-title"></title>
   </head>
 
-  <!-- The body of the home page -->
+  <!-- BODY CONTACTPAGE -->
   <body onload="loadLanguage('contact')">
+
+    <!-- START HEADER -->
     <header>
       <!-- START CONTACT HEADER -->
       <section class="header-contact-container">
         <section class="header-contact-elements-container">
           <img src="../../../../assets/icon/contact/mail.png" alt="mail" class="mail-icon" />
-          <p class="contact-text">mailtest@gmail.com</p>
+          <p class="contact-text">contact@yiwuruihe.cn</p>
         </section>
         <section class="header-contact-elements-container">
           <img src="../../../../assets/icon/contact/phone.png" alt="phone" class="phone-icon separate-element" />
@@ -31,7 +36,7 @@
         </section>
         <section class="header-contact-elements-container">
           <img src="../../../../assets/icon/contact/address.png" alt="mail" class="address-icon separate-element" />
-          <p class="contact-text">fictive address</p>
+          <p id="header-address" class="contact-text"></p>
         </section>
       </section>
       <!-- END CONTACT HEADER -->
@@ -39,12 +44,13 @@
       <!-- START TOP NAVIGATION  -->
       <nav>
         <div class="nav-container">
-          <!-- LOGO -->
+          <!-- START LOGO -->
           <section class="logo-container">
             <p class="logo">YWRH</p>
           </section>
+          <!-- END LOGO -->
 
-          <!-- NAVIGATION BUTTON -->
+          <!-- START NAVIGATION BUTTON -->
           <section id="nav-button" class="nav-link-button-container">
             <p class="active-page">
               <a id="top-nav-home" href="../../../../home.html" class="non-active-page"></a>
@@ -62,22 +68,25 @@
               <a id="top-nav-contact" href="./contact.html" class="active-page"></a>
             </p>
           </section>
+          <!-- END NAVIGATION BUTTON -->
 
-          <!-- FLAG BUTTON TO CHANGE LANGUAGE -->
+          <!-- START FLAG BUTTON TO CHANGE LANGUAGE -->
           <section id="nav-flag-container" class="nav-flag-container">
             <img src="../../../../assets/icon/countryFlag/en-flag.png" alt="en flag" class="en-flag" onclick="changeLanguage('../../../../assets/jsonForTranslate/en.json', 'contact-page-title', 'en')" />
             <img src="../../../../assets/icon/countryFlag/zh-flag.png" alt="zh flag" class="zh-flag" onclick="changeLanguage('../../../../assets/jsonForTranslate/zh.json', 'contact-page-title', 'zh-Hans')" />
           </section>
+          <!-- END FLAG BUTTON TO CHANGE LANGUAGE -->
 
-          <!-- MENU BUTTON WHEN THE SCREEN IS SMALL -->
+          <!-- START MENU BUTTON WHEN THE SCREEN IS SMALL -->
           <section id="nav-menu-button-container" class="nav-menu-button-container">
             <section id="nav-dropdown-button" class="nav-menu-button" onclick="displayMenuContent()">
               <img id="nav-dropdown-button-icon" src="../../../../assets/icon/nav-menu-button.png" class="nav-menu-button-icon" />
             </section>
           </section>
+          <!-- END MENU BUTTON WHEN THE SCREEN IS SMALL -->
         </div>
 
-        <!-- DROPDOWN CONTENT DISPLAYED IF THE USER CLICKED ON THE MENU BUTTON ONE TIME -->
+        <!-- START DROPDOWN CONTENT DISPLAYED IF THE USER CLICKED ON THE MENU BUTTON ONE TIME -->
         <section id="dropdown-content" class="dropdown-content">
           <p class="active-page">
             <a id="top-nav-home-menu" href="../../../../home.html" class="non-active-page"></a>
@@ -99,8 +108,10 @@
             <img src="../../../../assets/icon/countryFlag/zh-flag.png" alt="zh flag" class="zh-flag" onclick="changeLanguage('../../../../assets/jsonForTranslate/zh.json', 'contact-page-title', 'zh-Hans')" />
           </section>
         </section>
+        <!-- END DROPDOWN CONTENT DISPLAYED IF THE USER CLICKED ON THE MENU BUTTON ONE TIME -->
       </nav>
       <!-- END TOP NAVIGATION  -->
     </header>
+    <!-- END HEADER -->
   </body>
 </html>

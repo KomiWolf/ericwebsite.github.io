@@ -1,5 +1,8 @@
 // Function to get all the json element to display
 function getAllJsonElement(filepath) {
+  // Header contact
+  fetchJsonFileAndDisplayContent(filepath, 'header-address', 'JsonHeaderContact.JsonAddress');
+
   // Top Navigation button
   fetchJsonFileAndDisplayContent(filepath, 'top-nav-home', 'JsonNavigation.JsonHome');
   fetchJsonFileAndDisplayContent(filepath, 'top-nav-company', 'JsonNavigation.JsonCompany');
