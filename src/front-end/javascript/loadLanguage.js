@@ -13,6 +13,7 @@ function loadLanguage(whichPage) {
     document.getElementById('nav-button').style.display = 'none';
   };
 
+  // Change the logo size depending on the language
   changeLogoSize();
 
   if (savedLanguage === 'en') {
