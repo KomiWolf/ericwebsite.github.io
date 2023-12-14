@@ -7,3 +7,30 @@ a {
   text-decoration: none; /* To not underline the link */
   transition: font-size 0.2s ease;
 }
+
+main {
+  margin-top: 5%;
+}
+
+.company-card-container {
+  margin-left: -10px;
+  margin-right: -10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.factory-picture {
+  margin-left: 10%;
+  width: 350px;
+  height: 600px;
+  display: block;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.company-mini-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+}

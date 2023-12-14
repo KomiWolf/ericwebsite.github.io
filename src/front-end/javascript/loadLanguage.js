@@ -8,7 +8,6 @@ function loadLanguage(whichPage) {
     savedLanguage = 'en';
   };
 
-  document.getElementById('dropdown-content').style.display = 'none';
   if (savedLanguage === 'en') {
     if (whichPage === 'home') {
       document.getElementById('home-page-title').innerText = fetchJsonFileAndDisplayContent('./assets/jsonForTranslate/en.json', 'home-page-title', 'JsonNavigation.JsonHome');
