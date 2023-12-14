@@ -8,6 +8,11 @@ function loadLanguage(whichPage) {
     savedLanguage = 'en';
   };
 
+  // Set the display of the navigation buttons to 'none'
+  if (window.innerWidth <= 1323) {
+    document.getElementById('nav-button').style.display = 'none';
+  };
+
   if (savedLanguage === 'en') {
     if (whichPage === 'home') {
       document.getElementById('home-page-title').innerText = fetchJsonFileAndDisplayContent('./assets/jsonForTranslate/en.json', 'home-page-title', 'JsonNavigation.JsonHome');
