@@ -15,6 +15,7 @@
     <script src="./src/front-end/javascript/getAllJsonElement.js"></script>
     <script src="./src/front-end/javascript/changeLanguage.js"></script>
     <script src="./src/front-end/javascript/displayMenuContent.js"></script>
+    <script src="./src/front-end/javascript/changeLogoSize.js"></script>
     <script src="./src/front-end/javascript/loadLanguage.js"></script>
 
     <title id="home-page-title"></title>
@@ -47,8 +48,8 @@
         <div class="nav-container">
           <!-- START LOGO -->
           <section class="logo-container">
-            <h2 class="logo-top">浙 江 睿 峰 金 属 制 品 有 限 公 司</h2>
-            <p class="logo-bottom">ZHEJIANG RUIFENG METALWORKS CO.,LTD</p>
+            <h2 id="logo-top" class="logo-top"></h2>
+            <p id="logo-bottom" class="logo-bottom"></p>
           </section>
           <!-- END LOGO -->
 
@@ -97,16 +98,48 @@
     <!-- END HEADER -->
 
     <!-- START MAIN -->
-    <!-- <main>
-      <section class="company-card-container">
-        <img src="./assets/image/factory/factory1.JPG" alt="YWRF factory picture" class="factory-picture" />
-        <div class="company-mini-description">
-          <h1>L'entreprise</h1>
-          <p>Bonjour</p>
-          <button>Bouton</button>
-        </div>
+    <main>
+
+      <!-- START PRODUCT PICTURE SCROLLING -->
+      <section class="scrolling-container">
+        <section class="image-container">
+          <img src="./assets/image/products/product1.jpg" style="height: 190px; width: 460px;" />
+          <img src="./assets/image/products/product2.jpg" />
+          <img src="./assets/image/products/product3.jpg" />
+          <img src="./assets/image/products/product4.jpg" />
+          <img src="./assets/image/products/product5.jpg" />
+          <img src="./assets/image/products/product6.jpg" />
+          <img src="./assets/image/products/product7.jpg" />
+          <img src="./assets/image/products/product8.jpg" />
+          <img src="./assets/image/products/product9.jpg" />
+          <img src="./assets/image/products/product10.jpg" />
+        </section>
       </section>
-    </main> -->
+      <!-- END PRODUCT PICTURE SCROLLING -->
+
+      <!-- START COMPANY CARD  -->
+      <section class="company-card-container">
+        <section style="display: flex; flex-direction: column; margin-left: 10%;">
+          <section style="display: flex; flex-direction: row;">
+            <img src="./assets/image/factory/factory2.JPG" alt="YWRF factory picture" class="factory-picture" />
+            <img src="./assets/image/factory/factory2.JPG" alt="YWRF factory picture" class="factory-picture" />
+          </section>
+          <section style="display: flex; flex-direction: row;">
+            <img src="./assets/image/factory/factory2.JPG" alt="YWRF factory picture" class="factory-picture" />
+            <img src="./assets/image/factory/factory2.JPG" alt="YWRF factory picture" class="factory-picture" />
+          </section>
+        </section>
+        <section class="company-mini-description">
+          <h1 id="company-card-title"></h1>
+          <p id="company-card-description">(description test) L'entreprise a été créé en 2015 pour créer des objets en métal</p>
+          <p class="learn-more-button-container">
+            <a id="Learn-more-button" href="./src/front-end/html-css/company/company.html"></a>
+          </p>
+        </section>
+      </section>
+      <!-- END COMPANY CARD  -->
+
+    </main>
     <!-- END MAIN -->
   </body>
 </html>

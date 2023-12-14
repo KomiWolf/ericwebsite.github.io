@@ -1,12 +1,20 @@
 {
   "JsonHeaderContact": {
-    "JsonAddress": "Building 7, North District, Wanyang Zhongchuangcheng, Weishan Town, Dongyang City, Zhejiang Province"
+    "JsonAddress": "Building 7, North District, Wanyang Zhongchuangcheng, Weishan Town, Dongyang City, Zhejiang Province, China"
   },
   "JsonNavigation": {
+    "JsonLogoTop": "ZHEJIANG RUIFENG METALWORKS CO.,LTD",
+    "JsonLogoBottom": "浙 江 睿 峰 金 属 制 品 有 限 公 司",
     "JsonHome": "Home",
     "JsonCompany": "The Company",
     "JsonOurProducts": "Our Products",
     "JsonNews": "News",
     "JsonContactUs": "Contact Us"
+  },
+  "JsonHomePage": {
+    "JsonCompanyCard": {
+      "JsonCompanyCardTitle": "The company",
+      "JsonLearnMoreButton": "Learn more >"
+    }
   }
 }

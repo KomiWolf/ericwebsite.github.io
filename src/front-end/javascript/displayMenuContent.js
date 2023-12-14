@@ -9,6 +9,7 @@ function displayMenuContent() {
   };
 };
 
+// Change the display of the navigation buttons depending on the resize of the website page
 window.addEventListener('resize', function() {
   var navButtonContainer = document.getElementById('nav-button');
 

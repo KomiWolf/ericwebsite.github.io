@@ -13,39 +13,41 @@ function loadLanguage(whichPage) {
     document.getElementById('nav-button').style.display = 'none';
   };
 
+  changeLogoSize();
+
   if (savedLanguage === 'en') {
     if (whichPage === 'home') {
       document.getElementById('home-page-title').innerText = fetchJsonFileAndDisplayContent('./assets/jsonForTranslate/en.json', 'home-page-title', 'JsonNavigation.JsonHome');
-      getAllJsonElement('./assets/jsonForTranslate/en.json');
+      getAllJsonElement('./assets/jsonForTranslate/en.json', 'HomePage');
     } else if (whichPage === 'company') {
       document.getElementById('company-page-title').innerText = fetchJsonFileAndDisplayContent('../../../../assets/jsonForTranslate/en.json', 'company-page-title', 'JsonNavigation.JsonCompany');
-      getAllJsonElement('../../../../assets/jsonForTranslate/en.json');
+      getAllJsonElement('../../../../assets/jsonForTranslate/en.json', 'CompanyPage');
     } else if (whichPage === 'products') {
       document.getElementById('products-page-title').innerText = fetchJsonFileAndDisplayContent('../../../../assets/jsonForTranslate/en.json', 'products-page-title', 'JsonNavigation.JsonOurProducts');
-      getAllJsonElement('../../../../assets/jsonForTranslate/en.json');
+      getAllJsonElement('../../../../assets/jsonForTranslate/en.json', 'ProductsPage');
     } else if (whichPage === 'news') {
       document.getElementById('news-page-title').innerText = fetchJsonFileAndDisplayContent('../../../../assets/jsonForTranslate/en.json', 'news-page-title', 'JsonNavigation.JsonNews');
-      getAllJsonElement('../../../../assets/jsonForTranslate/en.json');
+      getAllJsonElement('../../../../assets/jsonForTranslate/en.json', 'NewsPage');
     } else if (whichPage === 'contact') {
       document.getElementById('contact-page-title').innerText = fetchJsonFileAndDisplayContent('../../../../assets/jsonForTranslate/en.json', 'contact-page-title', 'JsonNavigation.JsonContactUs');
-      getAllJsonElement('../../../../assets/jsonForTranslate/en.json');
+      getAllJsonElement('../../../../assets/jsonForTranslate/en.json', 'ContactPage');
     };
   } else if (savedLanguage === 'zh-Hans') {
     if (whichPage === 'home') {
       document.getElementById('home-page-title').innerText = fetchJsonFileAndDisplayContent('./assets/jsonForTranslate/zh.json', 'home-page-title', 'JsonNavigation.JsonHome');
-      getAllJsonElement('../../../../assets/jsonForTranslate/zh.json');
+      getAllJsonElement('../../../../assets/jsonForTranslate/zh.json', 'HomePage');
     } else if (whichPage === 'company') {
       document.getElementById('company-page-title').innerText = fetchJsonFileAndDisplayContent('../../../../assets/jsonForTranslate/zh.json', 'company-page-title', 'JsonNavigation.JsonCompany');
-      getAllJsonElement('../../../../assets/jsonForTranslate/zh.json');
+      getAllJsonElement('../../../../assets/jsonForTranslate/zh.json', 'CompanyPage');
     } else if (whichPage === 'products') {
       document.getElementById('products-page-title').innerText = fetchJsonFileAndDisplayContent('../../../../assets/jsonForTranslate/zh.json', 'products-page-title', 'JsonNavigation.JsonOurProducts');
-      getAllJsonElement('../../../../assets/jsonForTranslate/zh.json');
+      getAllJsonElement('../../../../assets/jsonForTranslate/zh.json', 'ProductsPage');
     } else if (whichPage === 'news') {
       document.getElementById('news-page-title').innerText = fetchJsonFileAndDisplayContent('../../../../assets/jsonForTranslate/zh.json', 'news-page-title', 'JsonNavigation.JsonNews');
-      getAllJsonElement('../../../../assets/jsonForTranslate/zh.json');
+      getAllJsonElement('../../../../assets/jsonForTranslate/zh.json', 'NewsPage');
     } else if (whichPage === 'contact') {
       document.getElementById('contact-page-title').innerText = fetchJsonFileAndDisplayContent('../../../../assets/jsonForTranslate/zh.json', 'contact-page-title', 'JsonNavigation.JsonContactUs');
-      getAllJsonElement('../../../../assets/jsonForTranslate/zh.json');
+      getAllJsonElement('../../../../assets/jsonForTranslate/zh.json', 'ContactPage');
     };
   };
 };
