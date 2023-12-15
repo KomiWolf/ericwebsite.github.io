@@ -36,7 +36,7 @@ function loadLanguage(whichPage) {
   } else if (savedLanguage === 'zh-Hans') {
     if (whichPage === 'home') {
       document.getElementById('home-page-title').innerText = fetchJsonFileAndDisplayContent('./assets/jsonForTranslate/zh.json', 'home-page-title', 'JsonNavigation.JsonHome');
-      getAllJsonElement('../assets/jsonForTranslate/zh.json', 'HomePage');
+      getAllJsonElement('./assets/jsonForTranslate/zh.json', 'HomePage');
     } else if (whichPage === 'company') {
       document.getElementById('company-page-title').innerText = fetchJsonFileAndDisplayContent('../../../../assets/jsonForTranslate/zh.json', 'company-page-title', 'JsonNavigation.JsonCompany');
       getAllJsonElement('../../../../assets/jsonForTranslate/zh.json', 'CompanyPage');
