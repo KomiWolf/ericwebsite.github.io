@@ -1,0 +1,21 @@
+{
+  "JsonHeaderContact": {
+    "JsonAddress": "浙江省东阳市巍山镇万洋众创城北区7幢"
+  },
+  "JsonNavigation": {
+    "JsonLogoTop": "浙 江 睿 峰 金 属 制 品 有 限 公 司",
+    "JsonLogoBottom": "ZHEJIANG RUIFENG METALWORKS CO.,LTD",
+    "JsonHome": "主页",
+    "JsonCompany": "公司",
+    "JsonOurProducts": "我们的产品",
+    "JsonNews": "消息",
+    "JsonContactUs": "联系我们"
+  },
+  "JsonHomePage": {
+    "JsonCompanyCard": {
+      "JsonCompanyCardTitle": "公司",
+      "JsonCompanyMiniDescription": "Bonjour !!",
+      "JsonLearnMoreButton": "知道一些 >"
+    }
+  }
+}

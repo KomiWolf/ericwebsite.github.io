@@ -1,0 +1,72 @@
+body {
+  background-color: white;
+  overflow-x: hidden;
+
+}
+
+.scrolling-container {
+  overflow: hidden;
+  background-color: white;
+  margin-left: 18%;
+  margin-right: 15.1%;
+}
+
+.image-container {
+  padding-left: 30%;
+  display: flex;
+  align-items: center;
+  animation: scrollImages 40s linear infinite;
+}
+
+@keyframes scrollImages {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-5000px);
+  }
+}
+
+.image-container img {
+  width: 350px;
+  height: 150px;
+}
+
+.company-card-container {
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-top: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.factory-picture {
+  margin-left: 5%;
+  margin-bottom: 5%;
+  width: 500px;
+  height: 500px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.company-mini-description {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#company-card-title {
+  font-size: 26px;
+}
+
+.learn-more-button-container {
+  margin-top: 70px;
+  display: flex;
+  /* justify-content: center; */
+}
+
+.learn-more-button-container a {
+  background-color: paleturquoise;
+  padding: 5%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
