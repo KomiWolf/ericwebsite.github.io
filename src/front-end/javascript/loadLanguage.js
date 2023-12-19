@@ -17,6 +17,8 @@ function loadLanguage(whichPage) {
   changeLogoSize();
 
   if (savedLanguage === 'en') {
+    // Change the "lang" attribute of <html> tag
+    document.documentElement.setAttribute('lang', 'en');
     if (whichPage === 'home') {
       document.getElementById('home-page-title').innerText = fetchJsonFileAndDisplayContent('./assets/jsonForTranslate/en.json', 'home-page-title', 'JsonNavigation.JsonHome');
       getAllJsonElement('./assets/jsonForTranslate/en.json', 'HomePage');
@@ -34,6 +36,8 @@ function loadLanguage(whichPage) {
       getAllJsonElement('../../../../assets/jsonForTranslate/en.json', 'ContactPage');
     };
   } else if (savedLanguage === 'zh-Hans') {
+    // Change the "lang" attribute of <html> tag
+    document.documentElement.setAttribute('lang', 'zh-Hans');
     if (whichPage === 'home') {
       document.getElementById('home-page-title').innerText = fetchJsonFileAndDisplayContent('./assets/jsonForTranslate/zh.json', 'home-page-title', 'JsonNavigation.JsonHome');
       getAllJsonElement('./assets/jsonForTranslate/zh.json', 'HomePage');
